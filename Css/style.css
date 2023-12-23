@@ -121,7 +121,7 @@ section
     justify-content:center ;
     align-items: center;
     background-size: cover;
-    background-image:  url(../images/mac.jpg) center center/cover no-repeat;
+    background: var(--second-bg-color) url(../images/mac.jpg) center center/cover no-repeat;
 }
 .home-img
 {
