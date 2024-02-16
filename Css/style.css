@@ -134,8 +134,6 @@ section
 .home-img img
 {
     clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
-
-
     animation: myAnim 2s ease 0s 1 normal backwards;
     
     
