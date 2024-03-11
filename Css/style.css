@@ -477,6 +477,16 @@ img
 {
     color: var(--bg-color);
 }
+
+/*contact us section*/
+
+ #socmed
+{
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
 /*footer*/
 footer {
     background-color:var(--second-bg-color);
