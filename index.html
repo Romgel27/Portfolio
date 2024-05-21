@@ -91,10 +91,10 @@
     <div class="about-content">
       <div class="card" >
         <h2 class="heading"> About <span>Me</span></h2>
-        <p class="fst-italic">Hello, I'm Roman Angelo Dayto, a 25-year-old individual with a sense of accomplishment in earning my degree from the University of Batangas. My academic journey has equipped me with a robust understanding of web development, fostering both knowledge and skills in the field.
+        <p class="fst-italic">Hello, I'm Roman Angelo Dayto, a 25-year-old graduate from the University of Batangas. I come from Tanauan City, Batangas, and my educational journey has provided me with a comprehensive understanding of web development, enhancing my skills and knowledge.
+          <br>
 
-          My enthusiasm lies in the pursuit of becoming a proficient full-stack developer, and I am actively engaged in honing my capabilities towards this objective. As a Web Developer, I am eager to apply my expertise to provide tangible value to clients. Committed to delivering top-notch solutions, I am excited about the prospect of collaborating on projects that resonate with my ambitions, contributing to the success of my clients.</p>
-        <p class="fst-italic">In addition to my passion for software development, I find solace and creative expression through online gaming. Engaging in virtual worlds not only serves as a form of relaxation and entertainment for me but also enhances my problem-solving abilities— a valuable skill set that directly translates into my work as a developer. I believe that the strategic thinking and adaptability developed in gaming enrich my approach to problem-solving in software development, ensuring a well-rounded and innovative perspective for any project I undertake.</p>
+          I am passionate about pursuing a career as a Software Engineer/Developer and am dedicated to continuously improving my expertise in this field.</p>
         <h3>My <span>Skills</span></h3>
         <ul class="skill">
             <li class="text-white"><i class='bx bxl-html5'style="color:#E34C26;"></i> HTML</li>
@@ -108,6 +108,30 @@
       </div>
     </div>
 </section>
+<!--Education Timeline-->
+
+<section class="timeline">
+  <h3>Education <span>Timeline</span></h3>
+  <ul>
+    <li style="font-size: 20px; color: #fff">
+      <div>
+        <time>2011</time> Maranatha Christian Academy <br> <h2 style="font-weight:500; color:#0ef" >Primary</h2>
+
+      </div>
+    </li>
+    <li style="font-size: 20px; color: #fff">
+      <div>
+        <time>2015</time> Tanauan City High School <br> <h2 style="font-weight:500; color:#0ef">Secondary</h2>
+      </div>
+    </li>
+    <li style="font-size: 20px; color: #fff">
+      <div>
+        <time>2023</time> University of Batangas <br> <h2 style="font-weight:500; color:#0ef">Tertiary</h2>
+      </div>
+    </li>
+  </ul>
+</section>
+
 <!--service Section-->
 
 <section class="services" id="project">
@@ -263,3 +287,38 @@
       ScrollReveal().reveal('.home-content, .home-img, .soc-media, .about-content, .col, .about-img, .services-container, .heading, .row',{ origin: 'left'});
       
   </script>
+  <Script>
+    (function () {
+      "use strict";
+    
+      // define variables
+      var items = document.querySelectorAll(".timeline li");
+    
+      // check if an element is in viewport
+      // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+      function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
+    
+      function callbackFunc() {
+        for (var i = 0; i < items.length; i++) {
+          if (isElementInViewport(items[i])) {
+            items[i].classList.add("in-view");
+          }
+        }
+      }
+    
+      // listen for events
+      window.addEventListener("load", callbackFunc);
+      window.addEventListener("resize", callbackFunc);
+      window.addEventListener("scroll", callbackFunc);
+    })();
+    
+  </Script>
