@@ -17,13 +17,24 @@
     </head>
   
     <header class="header">
-        <a href="#home" class="logo"> My Portfolio</a>
+        <a href="#home" class="logo"> <img src="images/portfolio_logo.png" alt="" width="80"> My Portfolio</a>
         <nav class="navbar">
           <div class="openMenu"><i class='bx bx-menu'></i></div>
           <ul class="mainMenu">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#project"> My Projects </a></li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light bg-dark" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item text-secondary-emphasis" href="#project">Web Application</a></li>
+                <li><a class="dropdown-item text-secondary-emphasis" href="#">Software Application</a></li>
+                <li><hr class="dropdown-divider text-secondary-emphasis"></li>
+                <li><a class="dropdown-item text-secondary-emphasis" href="#">Video Content</a></li>
+                <li><a class="dropdown-item text-secondary-emphasis" href="#">Graphic Design</a></li>
+              </ul>
+            </li>
             <li><a href="#certificates">Certificates</a></li>
             <li><a href="docs/RomanAngeloDayto_CV2024.pdf" target="_blank">My CV</a></li>
             <li><a href="#contact">My Contact</a></li>
@@ -39,9 +50,10 @@
   <div class="home-content">
       <h3> Hello It's me</h3>
       <h1> Roman Angelo Dayto</h1>
-      <h3>And I'm a <span>Web Developer</span></h3>
-      <p> Through this platform, I aim to offer a glimpse into my journey in the world of software development. Here, you will find a blend of my coding insights, reflections on cutting-edge tech trends, and more. As a Web developer, 
-        I am actively seeking opportunities in the field of Information Technology where I can apply and enhance my skills in web development. I am eager to collaborate on projects that not only align with my passion but also contribute value to your business by delivering innovative and high-quality solutions. </p>
+      <h3>And I'm a <span>Web Developer</span> and Digital Content Creator</h3>
+      <p> I am a web developer and digital content creator dedicated to helping businesses grow. With expertise in software development, video editing, and graphic design through Canva, I craft innovative web solutions while producing engaging TikTok content to boost product visibility and sales.
+
+        I am seeking opportunities to apply my technical skills and content creation expertise to projects that drive business success. Let’s work together to create solutions that deliver real value and growth. </p>
       <div class="soc-media">
           <a href="https://www.facebook.com/RomgelD"><i class='bx bxl-facebook-circle'></i></a>
           <a href="https://www.linkedin.com/in/roman-angelo-dayto-80a001264/"><i class='bx bxl-linkedin-square'></i></a>
@@ -91,22 +103,27 @@
     <div class="about-content">
       <div class="card" >
         <h2 class="heading"> About <span>Me</span></h2>
-        <p class="fst-italic">Hello, I'm Roman Angelo Dayto, a 25-year-old graduate from the University of Batangas. I come from Tanauan City, Batangas, and my educational journey has provided me with a comprehensive understanding of web development, enhancing my skills and knowledge.
+        <p >Hello, I'm Roman Angelo Dayto, a recent Information Technology graduate from the University of Batangas.
           <br>
+          With a strong foundation in web development, I specialize in creating innovative solutions for businesses. Alongside my technical expertise, I also produce digital content, including video editing and graphic design, to help business owners enhance their online presence and boost sales. I'm passionate about pursuing a career as a Software Engineer/Developer, and I'm committed to continuously honing my skills in both development and digital content creation.</p>
+        <h3>I have experience <span>with these technologies</span></h3>
+        <div class="tech">
+          <img src="images/Technologies/html.png" alt="" width="120">
+          <img src="images/Technologies/css.png" alt="" width="120">
+          <img src="images/Technologies/bootstrap.png" alt="" width="120">
+          <img src="images/Technologies/tailwind.png" alt="" width="120">
+          <img src="images/Technologies/javascript.png" alt="" width="120">
+          <img src="images/Technologies/python.png" alt="" width="120">
+          <img src="images/Technologies/php.png" alt="" width="120">
+          <img src="images/Technologies/CI4.png" alt="" width="120">
+          <img src="images/Technologies/laravel.png" alt="" width="120">
+          <img src="images/Technologies/mysql.png" alt="" width="120">
+          <img src="images/Technologies/xampp.png" alt="" width="120">
+          <img src="images/Technologies/github.png" alt="" width="120">
+          <img src="images/Technologies/canva.png" alt="" width="120">
+          <img src="images/Technologies/capcut.png" alt="" width="120">
 
-          I am passionate about pursuing a career as a Software Engineer/Developer and am dedicated to continuously improving my expertise in this field.</p>
-        <h3>My <span>Skills</span></h3>
-        <ul class="skill">
-            <li class="text-white"><i class='bx bxl-html5'style="color:#E34C26;"></i> HTML</li>
-            <li class="text-white"><i class='bx bxl-css3'style="color:#264de4;" ></i> CSS</li>
-            <li class="text-white"><i class='bx bxl-tailwind-css'style="color:#264de4;" ></i> Tailwind Css</li>
-            <li class="text-white "><i class='bx bxl-javascript'style="color:#f0db4f;" ></i></i> JavaScript</li>
-            <li class="text-white "><i class='bx bxl-php'style="color:#8993be;" ></i> PHP</li>
-            <li class="text-white"><i class='bx bxl-python' style="color:#4584b6,;"></i> Python</li>
-            <li class="text-white"><i class="bx bxs-hot" style="color:#E34C26;"></i>CodeIgniter4</li>
-            <li class="text-white"><i class="bx bxl-php" style="color:#E34C26;"></i>Laravel</li>
-            <li class="text-white"><i class="bx bxs-data" style="color:#00758F;"></i>MySQL</li>
-        </ul>
+        </div>
       </div>
     </div>
 </section>
@@ -115,7 +132,7 @@
 <!--service Section-->
 
 <section class="services" id="project">
-  <h2 class="heading">My <span>Projects</span></h2>
+  <h2 class="heading">Web <span> App Projects</span></h2>
   <div class="services-container">
 
       <div class="card" style="width: 50rem;">
@@ -183,6 +200,7 @@
           </div>
         </div>
   </div>
+  
 </section>
 
 
