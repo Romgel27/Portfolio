@@ -414,6 +414,12 @@ time {
       /*250+45-6*/
     }
   }
+  @media (max-width: 768px) {
+    .dropdown-menu {
+      width: 100%;
+      text-align: center;
+    }
+  }
   
   @media screen and (max-width: 600px) {
     .timeline ul li {
